@@ -25,6 +25,15 @@ prm use taobao
 
 ![](https://assets.fedtop.com/picbed/202208291122544.png)
 
+```sh
+# Show response time for specific or all registries
+prm test
+# or
+prm test [registry]
+```
+
+![](https://assets.fedtop.com/picbed/202208291517751.png)
+
 ## Dev
 
 ```sh
