@@ -1,5 +1,3 @@
-#!/usr/bin/env node --loader ts-node/esm --no-warnings
-
 const { Command } = require("commander");
 const version = require("../package.json").version;
 const { onUse, onList, onAdd } = require("./main");
