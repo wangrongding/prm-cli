@@ -11,25 +11,19 @@ npm i prm-cli -g
 
 ## Example
 
-```
-$ prm ls
-   cnpm           http://cnpmjs.org                   http://r.cnpmjs.org/
-   npm            https://www.npmjs.org               https://registry.npmjs.org/
-🚀 taobao         https://npmmirror.com               https://registry.npmmirror.com/
-   taobao2        https://npmmirror.com               https://registry.npm.taobao.org/
-   nj             https://www.nodejitsu.com           https://registry.nodejitsu.com/
-   rednpm         http://npm.mirror.cqupt.edu.cn/     http://registry.mirror.cqupt.edu.cn/
-   yarn           https://yarnpkg.com                 https://registry.yarnpkg.com
-   npmMirror      https://skimdb.npmjs.com/           https://skimdb.npmjs.com/registry/
-   edunpm         http://www.enpmjs.org               http://registry.enpmjs.org/
-
+```sh
+# List all registries
+prm ls
 ```
 
-```
-$ prm use taobao
+![](https://assets.fedtop.com/picbed/202208291120504.png)
 
-  Registry has been set to: http://r.cnpmjs.org/
+```sh
+# Select a registry that you need to switch
+prm use taobao
 ```
+
+![](https://assets.fedtop.com/picbed/202208291122544.png)
 
 ## Dev
 

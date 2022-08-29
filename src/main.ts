@@ -15,17 +15,22 @@ export function onUse(name: string) {
     console.error(`${name} is not found`);
     return;
   } else {
-    console.log("🚀🚀🚀", registry);
     // 更改npm的源
-    npm.load(function (err: Error) {
+    npm.load((err: Error) => {
       if (err) return exit(err);
       npm.commands.config(
         ["set", "registry", registry.registry],
-        function (err: Error, data: any) {
+        (err: Error, data: any) => {
           if (err) return exit(err);
           const newR = npm.config.get("registry");
           console.log(
-            chalk.green(`🎉🎉🎉 NPM Registry has been set to: `, newR)
+            "\n",
+            chalk.green(
+              `🎉🎉🎉 NPM Registry has been set to: ${registry.name} (${newR})`
+            ),
+            "\n\n\n",
+            chalk.blue("https://github.com/wangrongding"),
+            "\n"
           );
         }
       );
@@ -35,7 +40,7 @@ export function onUse(name: string) {
 
 // 获取列表
 export function onList() {
-  npm.load(function (err: Error, conf: any) {
+  npm.load((err: Error, conf: any) => {
     if (err) return exit(err);
     // 获取当前源
     const current = npm.config.get("registry");
