@@ -1,25 +1,25 @@
 {
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS",
-      "esModuleInterop": true,
+      "target": "es6", // 编译后的代码类型
+      "module": "CommonJS", // 模块类型
+      "esModuleInterop": false, // es6 模块化
+      "isolatedModules": false, // 单文件模块
       "types": ["node"]
     }
   },
   "compilerOptions": {
-    "target": "esnext", // 编译后的代码类型
+    "target": "es6", // 编译后的代码类型
+    "module": "CommonJS", // 模块类型
     "removeComments": true, // 删除注释
-    "useDefineForClassFields": true, // 类的字段使用 define 来定义
-    "module": "esnext", // 模块类型
     "moduleResolution": "node", // 模块解析器
+    "useDefineForClassFields": true, // 类的字段使用 define 来定义
     "strict": true, // 严格模式
     "jsx": "preserve", // jsx 编译方式
     "importHelpers": true, // 引入帮助器
     "allowSyntheticDefaultImports": true, // 允许合成默认导入
     "sourceMap": true, // 源码映射
     "resolveJsonModule": true, // 解析 json 文件
-    "isolatedModules": true, // 单文件模块
-    "esModuleInterop": true, // es6 模块化
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"], // 包含的库
     "allowJs": true, // 允许使用 js
     "noImplicitAny": true, // 不允许隐式any

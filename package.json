@@ -1,21 +1,26 @@
 {
   "name": "prm-cli",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.24",
+  "description": "Registry Manager for Package Management Tools",
+  "type": "commonjs",
   "main": "./src/index.ts",
   "scripts": {
-    "dev": "tsc -w",
+    "dev": "sudo npm link",
     "build": "tsc && chmod +x ./bin/index.js",
     "type": "tsc -p ./tsconfig.json -emitDeclarationOnly"
   },
   "bin": {
     "prm": "./src/index.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "registry",
+    "npm",
+    "package management tools"
+  ],
+  "author": "荣顶",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "4.1.0",
     "commander": "^9.4.0",
     "inquirer": "^9.1.0",
     "npm": "^3.10.3"
