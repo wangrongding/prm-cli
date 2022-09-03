@@ -1,4 +1,4 @@
-# prm -- Package Management Tools Registry Manager
+# PRM -- package manager's registry manager
 
 `prm` can help you easy and fast switch between different npm registries,
 now include: `npm`, `cnpm`, `taobao`, `nj(nodejitsu)`, `rednpm`, `yarn`, `npmMirror`, `edunpm`.

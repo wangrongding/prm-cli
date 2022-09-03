@@ -1,6 +1,6 @@
 {
   "name": "prm-cli",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "description": "Registry Manager for Package Management Tools",
   "main": "./src/index.ts",
   "scripts": {
@@ -18,6 +18,11 @@
   ],
   "author": "荣顶",
   "license": "ISC",
+  "homepage": "https://github.com/wangrongding/prm-cli/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangrongding/prm-cli.git"
+  },
   "dependencies": {
     "@types/node": "^18.7.13",
     "chalk": "4.1.0",
