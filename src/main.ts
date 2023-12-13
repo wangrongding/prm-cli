@@ -68,6 +68,7 @@ export function onUse(name: string) {
 export function onList() {
   const npm = spawn('npm', ['config', 'get', 'registry', '--no-workspaces']);
   npm.stdout.on('data', (data: string) => {
+    console.log('\n');
     const current = data.toString().trim();
     // 遍历源列表，如果当前源在源列表中，则高亮
     registryList.forEach((item: any) => {
@@ -77,8 +78,9 @@ export function onList() {
     // 如果当前源不在源列表中，则显示当前源
     if (!registryList.some((item: any) => item.registry === current)) {
       const str = `${('custom' + ' ').padEnd(14, ' ')} ${current}`;
-      console.log(chalk.blue(`🚀 ${str}`));
+      console.log(chalk.blue(`🚀 ${str} (in your .npmrc)`));
     }
+    console.log('\n');
   });
 }
 
