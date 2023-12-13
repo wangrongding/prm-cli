@@ -1,6 +1,6 @@
 {
   "name": "prm-cli",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "Registry Manager for Package Management Tools",
   "main": "./src/index.ts",
   "scripts": {
