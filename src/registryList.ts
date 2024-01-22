@@ -15,11 +15,6 @@ exports.default = [
     registry: "https://registry.npmmirror.com/",
   },
   {
-    name: "taobao2",
-    home: "https://npmmirror.com",
-    registry: "https://registry.npm.taobao.org/",
-  },
-  {
     name: "nj",
     home: "https://www.nodejitsu.com",
     registry: "https://registry.nodejitsu.com/",

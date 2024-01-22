@@ -1,12 +1,13 @@
 {
   "name": "prm-cli",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "description": "Registry Manager for Package Management Tools",
   "main": "./src/index.ts",
   "scripts": {
     "dev": "sudo npm link",
     "build": "tsc && chmod +x ./bin/index.js",
-    "type": "tsc -p ./tsconfig.json -emitDeclarationOnly"
+    "type": "tsc -p ./tsconfig.json -emitDeclarationOnly",
+    "pub": "npm publish --registry https://registry.npmjs.org"
   },
   "bin": {
     "prm": "./bin/index.js"
