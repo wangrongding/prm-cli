@@ -1,6 +1,6 @@
 {
   "name": "prm-cli",
-  "version": "0.0.33",
+  "version": "0.0.34",
   "description": "Registry Manager for Package Management Tools",
   "main": "./src/index.ts",
   "scripts": {
@@ -27,6 +27,7 @@
   "dependencies": {
     "chalk": "4.1.0",
     "commander": "^9.5.0",
+    "cross-spawn": "^7.0.6",
     "npm": "3.10.3",
     "request": "^2.88.2",
     "ts-node": "^10.9.2",

@@ -1,7 +1,8 @@
 const chalk = require('chalk');
 const request = require('request');
 const registryList = require('./registryList').default;
-const spawn = require('child_process').spawn;
+// const spawn = require('child_process').spawn;
+const spawn = require('cross-spawn'); // 兼容windows
 
 function getRegistry(name: string) {
   return registryList.find((item: any) => item.name === name);
