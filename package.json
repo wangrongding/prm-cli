@@ -1,9 +1,10 @@
 {
   "name": "prm-cli",
-  "version": "0.0.34",
+  "version": "0.0.35",
   "description": "Registry Manager for Package Management Tools",
   "main": "./src/index.ts",
   "scripts": {
+    "test": "node bin/index.js ls",
     "dev": "sudo npm link",
     "build": "tsc && chmod +x ./bin/index.js",
     "type": "tsc -p ./tsconfig.json -emitDeclarationOnly",
@@ -12,6 +13,14 @@
   "bin": {
     "prm": "./bin/index.js"
   },
+  "files": [
+    "bin",
+    "types",
+    "src",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "registry",
     "npm",
