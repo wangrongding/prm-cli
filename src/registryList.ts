@@ -22,7 +22,7 @@ exports.default = [
   {
     name: "rednpm",
     registry: "http://registry.mirror.cqupt.edu.cn/",
-    home: "http://npm.mirror.cqupt.edu.cn/",
+    home: "http://npm.mirror.cqupt.edu.cn",
   },
   {
     name: "yarn",
@@ -32,7 +32,7 @@ exports.default = [
   {
     name: "npmMirror",
     registry: "https://skimdb.npmjs.com/registry/",
-    home: "https://skimdb.npmjs.com/",
+    home: "https://skimdb.npmjs.com",
   },
   {
     name: "edunpm",

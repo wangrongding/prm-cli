@@ -27,7 +27,7 @@
     "package management tools"
   ],
   "author": "荣顶",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/wangrongding/prm-cli/",
   "repository": {
     "type": "git",
