@@ -49,6 +49,23 @@ prm test
 prm test taobao
 ```
 
+### 添加自定义镜像源
+
+```sh
+prm add <registry-name> <url> [home-url]
+# 例如
+prm add myregistry https://registry.example.com/ https://www.example.com/
+```
+
+### 删除自定义镜像源
+
+```sh
+prm del <registry-name>
+# 或者
+prm delete <registry-name>
+prm rm <registry-name>
+```
+
 ![](https://assets.fedtop.com/picbed/202208291517751.png)
 
 ## 📋 内置镜像源
