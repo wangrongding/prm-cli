@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { Command } = require("commander");
 const version = require("../package.json").version;
 const { onUse, onList, onAdd, onTest, onDelete } = require("./main");
